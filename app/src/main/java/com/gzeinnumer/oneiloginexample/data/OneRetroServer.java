@@ -17,7 +17,7 @@ public class OneRetroServer {
                 .Builder()
                 .baseUrl(base_url)
                 .addConverterFactory(GsonConverterFactory.create())
-                .client(client)
+//                .client(client)
                 .build();
     }
 

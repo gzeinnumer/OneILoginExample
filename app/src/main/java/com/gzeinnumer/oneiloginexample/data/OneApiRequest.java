@@ -12,6 +12,10 @@ import retrofit2.http.POST;
 
 public interface OneApiRequest {
 
+    @Headers({
+            "X-API-KEY : 454041184B0240FBA3AACD15A1F7ABBB",
+            "Content-Type : application/x-www-form-urlencoded"
+    })
     @FormUrlEncoded
     @POST("user/login")
     Call<LoginResponse> login(@Field("username") String username, @Field("password") String password);
